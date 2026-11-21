@@ -1,0 +1,14 @@
+{
+  "title": "Boundary missed",
+  "description": "Adds discount(): 10% off orders of $100 or more. Tests cover a small and a large order, but never the $100 threshold itself.",
+  "lesson": "Most faults are caught; the two that survive are exactly at the boundary (>= vs >, 100 vs 101).",
+  "expect": {
+    "status": "DONE",
+    "riskTier": "MEDIUM",
+    "mutationScore": 0.6667,
+    "conformance": {
+      "verdict": "FAIL",
+      "achievedLevel": "PV-1"
+    }
+  }
+}

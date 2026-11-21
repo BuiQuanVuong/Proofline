@@ -1,0 +1,14 @@
+{
+  "pvf": "1.0",
+  "requiredLevel": "PV-4",
+  "deviations": [
+    {
+      "rule": "PV-TEST-03",
+      "file": "src/limits.js",
+      "line": 6,
+      "operator": "ROR_LT_TO_LTE",
+      "justification": "Equivalent mutant: when x === min, returning min and returning x give the same value, so no test can tell x < min from x <= min.",
+      "approvedBy": "reviewer@example.com"
+    }
+  ]
+}

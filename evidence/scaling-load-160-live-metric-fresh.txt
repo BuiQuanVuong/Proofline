@@ -1,0 +1,23 @@
+node infra/watch-scaling.js --every=15 --minutes=25   (2026-10-31, local time AEST; run 3, fresh content)
+Rows up to the queue draining; the rows after 11:56:50 (scale back to 0) were not captured here.
+
+time      waiting  in-flight  dlq  | published   | desired running pending | scale-out alarm  scale-to-zero alarm
+11:49:43        0          0    0  | 0@11:48     |       1       1       0  | OK               OK
+11:50:14        0          0    0  | 0@11:49     |       1       1       0  | OK               OK
+11:50:44        0          0    0  | 0@11:49     |       0       0       0  | OK               ALARM
+11:51:15        0          0    0  | 0@11:50     |       0       0       0  | OK               ALARM
+11:51:45      160          0    0  | 0@11:50     |       0       0       0  | OK               ALARM
+11:52:00      160          0    0  | 0@11:51     |       0       0       0  | OK               ALARM
+11:53:01      160          0    0  | 160@11:52   |       0       0       0  | OK               ALARM
+11:53:32      160          0    0  | 160@11:52   |       0       0       0  | OK               OK
+11:54:03      160          0    0  | 160@11:53   |      12       0      12  | ALARM            OK
+11:54:33      160          0    0  | 160@11:53   |      12      12       0  | ALARM            OK
+11:54:48      147         12    0  | 160@11:53   |      12      12       0  | ALARM            OK
+11:55:04      143         12    0  | 159@11:54   |      12      12       0  | ALARM            OK
+11:55:19      147         12    0  | 159@11:54   |      12      12       0  | ALARM            OK
+11:55:34       86         12    0  | 159@11:54   |      12      12       0  | ALARM            OK
+11:55:49      143         12    0  | 159@11:54   |      12      12       0  | ALARM            OK
+11:56:05      120         12    0  | 155@11:55   |      12      12       0  | ALARM            OK
+11:56:20       55         12    0  | 155@11:55   |      12      12       0  | ALARM            OK
+11:56:35       19         12    0  | 155@11:55   |      12      12       0  | ALARM            OK
+11:56:50        0          0    0  | 155@11:55   |      12      12       0  | ALARM            OK

@@ -1,0 +1,14 @@
+{
+  "title": "Boundary tested",
+  "description": "The same discount() as boundary-weak, plus one test at $99 and $100.",
+  "lesson": "One boundary test kills the survivors from boundary-weak: same code, LOW risk.",
+  "expect": {
+    "status": "DONE",
+    "riskTier": "LOW",
+    "mutationScore": 1,
+    "conformance": {
+      "verdict": "PASS",
+      "achievedLevel": "PV-4"
+    }
+  }
+}

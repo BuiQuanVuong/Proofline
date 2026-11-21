@@ -1,0 +1,81 @@
+{
+  "csv": "evidence/load-160-live-metric-fresh.csv",
+  "jobs": 160,
+  "window": {
+    "start": "2026-10-31T01:50:29.359Z",
+    "end": "2026-10-31T01:57:28.714Z",
+    "minutes": 7
+  },
+  "runnerCpuPercent": {
+    "average": 30.3,
+    "maximum": 97.7,
+    "minutesWithData": 6
+  },
+  "runnerMemoryPercent": {
+    "average": 3.8,
+    "maximum": 8.4
+  },
+  "runnerTasks": {
+    "peakDesired": 12,
+    "backToZeroAt": "2026-10-31T02:02:29.437Z",
+    "taskMinutes": 52.5,
+    "taskSecondsPerJob": 19.7,
+    "note": "desired count over time, from the first submit until the service returned to zero; tasks spend ~30 s of it starting",
+    "changes": [
+      "2026-10-31T01:50:29.431Z -> 0",
+      "2026-10-31T01:53:58.249Z -> 12",
+      "2026-10-31T01:57:58.244Z -> 1",
+      "2026-10-31T02:02:29.437Z -> 0"
+    ]
+  },
+  "lambda": {
+    "api": {
+      "invocations": 4329,
+      "perJob": 27.1,
+      "avgMs": 17,
+      "maxMs": 505
+    },
+    "planner": {
+      "invocations": 160,
+      "perJob": 1,
+      "avgMs": 158,
+      "maxMs": 580
+    },
+    "aggregator": {
+      "invocations": 160,
+      "perJob": 1,
+      "avgMs": 513,
+      "maxMs": 1276
+    },
+    "dlq": {
+      "invocations": 0,
+      "perJob": 0,
+      "avgMs": 0,
+      "maxMs": 0
+    },
+    "backlog": {
+      "invocations": 7,
+      "perJob": 0,
+      "avgMs": 187,
+      "maxMs": 251
+    }
+  },
+  "lambdaMemory": {
+    "error": "AccessDeniedException: User with accountId: 123456789012 is not authorized to perform StartQuery on resources /aws/lambda/proofline-planner,/aws/lambda/proofline-dlq-handler,/aws/lambda/proofline-backlog-publisher,/aws/lambda/proofline-api,/aws/lambda/proofline-aggregator."
+  },
+  "dynamodb": {
+    "readUnits": 6169,
+    "writeUnits": 3680,
+    "readPerJob": 38.6,
+    "writePerJob": 23
+  },
+  "apiRequests": {
+    "total": 4329,
+    "perJob": 27.1
+  },
+  "sqsMessagesSent": {
+    "total": 320,
+    "perJob": 2
+  },
+  "s3BucketMB": 1.9
+}

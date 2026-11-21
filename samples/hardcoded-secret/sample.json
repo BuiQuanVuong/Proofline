@@ -1,0 +1,6 @@
+{
+  "title": "Committed credential",
+  "description": "Adds connectionString() using a password written into the source.",
+  "lesson": "PV-SEC-03 (CWE-798) is mandatory: the file is PV-0 whatever its tests achieve, and the report shows the value redacted.",
+  "expect": { "status": "DONE", "conformance": { "verdict": "FAIL", "achievedLevel": "PV-0" } }
+}

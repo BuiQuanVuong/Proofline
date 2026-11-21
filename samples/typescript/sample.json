@@ -1,0 +1,14 @@
+{
+  "title": "TypeScript",
+  "description": "Adds gst() to a TypeScript module, with tests for both the taxed and the exempt path.",
+  "lesson": "TypeScript works with no extra setup: type annotations are skipped and only runtime code is mutated.",
+  "expect": {
+    "status": "DONE",
+    "riskTier": "LOW",
+    "mutationScore": 1,
+    "conformance": {
+      "verdict": "PASS",
+      "achievedLevel": "PV-4"
+    }
+  }
+}

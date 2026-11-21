@@ -1,0 +1,8 @@
+**/node_modules
+.git
+.proofline-cache
+**/coverage
+infra
+*.report.json
+*.md
+!engine/README.md

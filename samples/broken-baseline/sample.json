@@ -1,0 +1,15 @@
+{
+  "title": "Broken baseline",
+  "description": "Changes the shipping rate to $3/kg without updating the test that expects $2/kg.",
+  "lesson": "Proofline refuses to score a change whose own test suite fails: the job ends BASELINE_FAILED before any mutant runs.",
+  "expect": {
+    "status": "BASELINE_FAILED",
+    "failures": [
+      "test/pricing.test.js > charges $2 per kg"
+    ],
+    "conformance": {
+      "verdict": "NOT_EVALUATED",
+      "achievedLevel": "PV-0"
+    }
+  }
+}

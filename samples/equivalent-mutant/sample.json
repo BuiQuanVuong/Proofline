@@ -1,0 +1,7 @@
+{
+  "title": "Equivalent mutant, deviated",
+  "description": "Adds atLeast() with complete tests. One mutant (< to <=) can't be killed because it doesn't change behaviour; the profile records that as a justified deviation and requires PV-4.",
+  "lesson": "Deviations are how a PVF profile handles mutation testing's known blind spot: the survivor stays visible with its justification, and the file reaches PV-4.",
+  "expect": { "status": "DONE", "riskTier": "MEDIUM", "mutationScore": 0.6667,
+    "conformance": { "verdict": "PASS", "achievedLevel": "PV-4" } }
+}

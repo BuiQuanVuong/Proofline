@@ -1,0 +1,30 @@
+{
+  "name": "proofline-infra",
+  "private": true,
+  "type": "module",
+  "description": "Deploy, teardown and probe scripts for Proofline (run by the user, never automatically)",
+  "dependencies": {
+    "@aws-sdk/client-apigatewayv2": "^3.1156.0",
+    "@aws-sdk/client-application-auto-scaling": "^3.1156.0",
+    "@aws-sdk/client-cloudfront": "^3.1156.0",
+    "@aws-sdk/client-cloudwatch": "^3.1156.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.1156.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.1156.0",
+    "@aws-sdk/client-dynamodb": "^3.1156.0",
+    "@aws-sdk/client-ec2": "^3.1156.0",
+    "@aws-sdk/client-ecr": "^3.1156.0",
+    "@aws-sdk/client-ecs": "^3.1156.0",
+    "@aws-sdk/client-elasticache": "^3.1156.0",
+    "@aws-sdk/client-eventbridge": "^3.1156.0",
+    "@aws-sdk/client-iam": "^3.1156.0",
+    "@aws-sdk/client-lambda": "^3.1156.0",
+    "@aws-sdk/client-s3": "^3.1156.0",
+    "@aws-sdk/client-s3-control": "^3.1156.0",
+    "@aws-sdk/client-secrets-manager": "^3.1159.0",
+    "@aws-sdk/client-sqs": "^3.1156.0",
+    "@aws-sdk/client-ssm": "^3.1156.0",
+    "@aws-sdk/client-sts": "^3.1156.0",
+    "esbuild": "^0.28.2",
+    "fflate": "^0.8.3"
+  }
+}

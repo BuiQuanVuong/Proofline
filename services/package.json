@@ -1,0 +1,30 @@
+{
+  "name": "proofline-services",
+  "private": true,
+  "type": "module",
+  "description": "Proofline runner, planner and aggregator (shared by the container and the Lambdas)",
+  "scripts": {
+    "test": "node --test test/pure.test.js test/api.test.js test/hotcache.test.js",
+    "test:samples": "node --test test/samples.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.1156.0",
+    "@aws-sdk/client-dynamodb": "^3.1156.0",
+    "@aws-sdk/client-eventbridge": "^3.1156.0",
+    "@aws-sdk/client-s3": "^3.1156.0",
+    "@aws-sdk/client-secrets-manager": "^3.1159.0",
+    "@aws-sdk/client-sqs": "^3.1156.0",
+    "@aws-sdk/client-ssm": "^3.1156.0",
+    "@aws-sdk/lib-dynamodb": "^3.1156.0",
+    "@aws-sdk/s3-request-presigner": "^3.1156.0",
+    "ioredis": "^6.0.0",
+    "proofline-engine": "file:../engine",
+    "tar": "^7.5.22"
+  },
+  "bin": {
+    "proofline": "bin/proofline.js"
+  }
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+.coverage.*
+*.egg-info/
+dist/
+build/
+node_modules/
+.proofline-cache/
+*.report.json
+.env
+coverage/
+infra/config.local.json

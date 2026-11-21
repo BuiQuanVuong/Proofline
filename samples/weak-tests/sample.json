@@ -1,0 +1,14 @@
+{
+  "title": "Weak tests",
+  "description": "Adds clamp() and isAdult(). Every line runs, but no test checks a boundary (x === lo, x === hi, age 18), and the x > hi branch never executes.",
+  "lesson": "Line coverage looks fine (83%), yet most injected boundary faults go unnoticed.",
+  "expect": {
+    "status": "DONE",
+    "riskTier": "HIGH",
+    "mutationScore": 0.375,
+    "conformance": {
+      "verdict": "FAIL",
+      "achievedLevel": "PV-1"
+    }
+  }
+}

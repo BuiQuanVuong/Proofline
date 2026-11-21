@@ -1,0 +1,7 @@
+{
+  "title": "Tested but unsafe",
+  "description": "Adds evaluate(), which calls eval() on its input. Fully tested; the repository's profile requires PV-3 for src/**.",
+  "lesson": "Every injected fault is caught (score 1.0), yet the change fails: PV-SEC-01 (CWE-95) blocks PV-3. Mutation testing alone would have called this LOW risk.",
+  "expect": { "status": "DONE", "riskTier": "LOW", "mutationScore": 1,
+    "conformance": { "verdict": "FAIL", "achievedLevel": "PV-2" } }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Untested code",
+  "description": "Adds parseQuantity() with no test at all.",
+  "lesson": "No test executes the new lines: every mutant is NO_COVERAGE and changed-line coverage is 0%.",
+  "expect": {
+    "status": "DONE",
+    "riskTier": "HIGH",
+    "mutationScore": 0,
+    "conformance": {
+      "verdict": "FAIL",
+      "achievedLevel": "PV-0"
+    }
+  }
+}

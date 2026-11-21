@@ -1,0 +1,5 @@
+{
+  "pvf": "1.0",
+  "requiredLevel": "PV-2",
+  "paths": [{ "glob": "src/**", "requiredLevel": "PV-3" }]
+}
